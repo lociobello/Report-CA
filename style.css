@@ -1,0 +1,56 @@
+@font-face{font-family: sohne; font-weight: normal; src: url('fonts/Sohne-Buch.ttf');}
+@font-face{font-family: sohne; font-weight: bold; src: url('fonts/Sohne-Kraftig.ttf');}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sohne;
+  font-weight: normal;
+  font-size: px;
+}
+html{
+  height: 200%;
+}
+body{
+  height: 100%;
+}
+.main-container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.landing-container{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  height: 100vh;
+  border: 1px solid red;
+}
+.report-container{
+  display: flex;
+  flex-direction: row;
+  flex-basis: 100%;
+  height: 100%;
+}
+.side-sx{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  height: 100%;
+  border: 1px solid red;
+}
+.side-center{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  height: 100%;
+  border: 1px solid red;
+}
+.side-dx{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 25%;
+  height: 100%;
+  border: 1px solid red;
+}
