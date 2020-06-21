@@ -3,7 +3,6 @@
 
 *{
   margin: 0px;
-  padding: 0px;
   box-sizing: border-box;
   font-family: sohne;
   font-weight: normal;
@@ -14,6 +13,13 @@ html{
 }
 body{
   height: 100%;
+}
+h1{
+  font-size: 18px;
+  font-weight: bold;
+}
+p{
+  font-size: 20px;
 }
 .main-container{
   display: flex;
@@ -33,24 +39,22 @@ body{
   flex-basis: 100%;
   height: 100%;
 }
-.side-sx{
+.content{
   display: flex;
+  padding: 20px;
   flex-direction: column;
-  flex-basis: 25%;
   height: 100%;
   border: 1px solid red;
 }
-.side-center{
-  display: flex;
-  flex-direction: column;
+#sx{
+  flex-basis: 25%;
+}
+#center{
   flex-basis: 50%;
-  height: 100%;
-  border: 1px solid red;
 }
-.side-dx{
-  display: flex;
-  flex-direction: column;
+#dx{
   flex-basis: 25%;
-  height: 100%;
-  border: 1px solid red;
+}
+#piccolo{
+  font-size: 16px;
 }
