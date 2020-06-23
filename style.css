@@ -12,7 +12,7 @@ html{
   height: 200%;
 }
 body{
-  height: 100%;
+  height: 200%;
 }
 h1{
   font-size: 18px;
@@ -21,16 +21,21 @@ h1{
 p{
   font-size: 20px;
 }
-.main-container{
+.orangeColor {
+  color: #FF4E00;
+}
+/* .main-container{
   display: flex;
   height: 100%;
   flex-direction: column;
-}
+} */
 .landing-container{
   display: flex;
   flex-direction: column;
-  flex-basis: 100%;
+  /* flex-basis: 100vh; */
   height: 100vh;
+  /* flex-basis: 100%; */
+  /* height: 100vh; */
   padding-left: 300px;
   padding-right: 300px;
 }
@@ -44,8 +49,8 @@ p{
   display: flex;
   padding: 20px;
   flex-direction: column;
-  height: 100%;
-  border: 1px solid red;
+  /* height: 100%;
+  border: 1px solid red; */
 }
 #sx{
   flex-basis: 25%;
@@ -58,4 +63,73 @@ p{
 }
 #piccolo{
   font-size: 16px;
+}
+
+/* INDEX & AUTHORS */
+
+.fixme {
+background: green; width: 100%;
+}
+#index_sx {
+  position: absolute;
+  width: 25%;
+  /* height: 40%; */
+  height: 50vh;
+  padding-left: 3vw;
+  /* border: 1px solid red; */
+}
+#authors_dx {
+  /* position: inherit; */
+  /* display: inline-block; */
+  position: absolute;
+  /* top: 0%; */
+  right: 0%;
+  width: 25%;
+  height: 50vh;
+  /* height: 40%; */
+  padding-right: 3vw;
+  /* border: 1px solid red; */
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #FF4E00;
+  background-color: transparent;
+  /* text-decoration: underline; */
+}
+
+a:active {
+  color: #FF4E00;
+  background-color: transparent;
+  /* text-decoration: underline; */
+}
+.report_title {
+  padding-top: 4vh;
+  padding-bottom: 3vh;
+  text-align: center;
+  border-top: 1px solid black;
+}
+.report_paragraph {
+  padding-bottom: 5vh;
+}
+.report_image {
+  /* padding-top: 5vh; */
+  padding-bottom: 2.5vh;
+  width: 100%;
+}
+.report_video {
+  /* padding-top: 5vh; */
+  position: absolute;
+  top:0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5vh;
 }

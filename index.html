@@ -1,34 +1,257 @@
 <!DOCTYPE html>
 <html lang="it" dir="ltr">
-  <head>
-    <meta charset="utf-8">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 
-    <title>REPORT</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <div class="landing-container">
-        <p>landing</p>
-        <div style="padding:56.25% 0 0 0;position:relative;top:70px"><iframe src="https://player.vimeo.com/video/253871431?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+  <title>REPORT</title>
+</head>
 
-      </div>
-      <div class="report-container">
-        <div class="content" id="sx">
-          <h1>TITOLO</h1>
-        </div>
-        <div class="content" id="center">
-          <p>
-            TITOLO è un cortometraggio realizzato con Blender, per il corso
-            di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-            Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-          </p>
-        </div>
-        <div class="content" id="dx">
-          <h1 id="piccolo">Autori</h1>
-        </div>
+<body>
+  <!-- <div id = "invisible_box" style="position:relative;top:0; height: 100vh"></div> -->
+
+  <!-- <div class="main-container"> -->
+  <div class="landing-container">
+    <p>landing</p>
+    <div style="padding:56.25% 0 0 0;position:relative;top:70px"><iframe src="https://player.vimeo.com/video/253871431?portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen"
+        allowfullscreen></iframe></div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+  </div>
+  <div class="fixme">
+    <div id="index_sx">
+      <h1 class="orangeColor" style="padding-top: 1vw">TITOLO</h1>
+      <ol style="padding-top: 19vh">
+        <li><a href="#1">Storia</a></li>
+        <li><a href="#2">Concept</a></li>
+        <li><a href="#3">Storyboard e Animatic</a></li>
+        <li><a href="#4">Modellazione</a></li>
+        <li><a href="#5">Shading</a></li>
+        <li><a href="#6">Retopology e Rigging</a></li>
+        <li><a href="#7">Animazione</a></li>
+        <li><a href="#8">Regia e Fotografia</a></li>
+        <li><a href="#9">Rendering</a></li>
+        <li><a href="#10">Montaggio e Suono</a></li>
+      </ol>
+    </div>
+    <div id="authors_dx" style="padding-left: 6vw; padding-right: 3vw">
+      <h1 class="orangeColor" style="padding-top: 1vw">Autori</h1>
+      <div style="padding-top: 19vh">
+        <p class="orangeColor">Lorenzo Bernini</p>
+        <p style="padding-bottom: 2.5vh">Storia, Regia, Modellazione, Shading, Animazione</p>
+        <p class="orangeColor">Gianluca Locatelli</p>
+        <p style="padding-bottom: 2.5vh">Modellazione, Shading, Animazione, Coding</p>
+        <p class="orangeColor">Filippo Testa</p>
+        <p style="padding-bottom: 2.5vh">Modellazione, Shading, Animazione</p>
       </div>
     </div>
-  </body>
+  </div>
+  <div class="report-container">
+    <div class="content" id="sx">
+      <!-- <h1>TITOLO</h1> -->
+    </div>
+    <div class="content" id="center">
+      <p style="padding-bottom: 5vh" class="report_paragraph">
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <!-- 1. Storia -->
+      <h1 id="1" class="report_title orangeColor">1. Storia</h1>
+      <p class="report_paragraph">
+        Tutto è iniziato con lo sviluppo della sceneggiatura. Durante la scrittura si sono prese una serie di scelte atte a semplificare il più possibile il lavoro nelle fasi successive. Una fondamentale è stata il fatto che tutti i personaggi
+        dovessero indossare un casco. Questo accorgimento, oltre ad essere perfettamente coerente con la narrazione, ci ha risparmiato la necessità di dover animare il volto dei protagonisti. Un’altra scelta che ci ha semplificato il lavoro è stata
+        quella dell’ambientazione molto desolata, che ha ridotto il numero di modelli da produrre per popolare i vari ambienti. Questo tuttavia non è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è
+        rapidamente trasformato il qualcosa di molto più grande di quello che avevamo immaginato inizialmente.
+      </p>
+      <!-- 2. Concept -->
+      <h1 id="2" class="report_title orangeColor">2. Concept</h1>
+      <p class="report_paragraph">
+        Dopo aver finito di scrivere la sceneggiatura abbiamo subito iniziato una fase di brainstorming e raccolta di reference per iniziare a capire quale sarebbe dovuto essere il design dei personaggi. Alla fine abbiamo optato per un mix tra un
+        palombaro ed un astronauta, le cui tute trasmettevano la stessa sensazione di isolamento dal mondo esterno che stavamo cercando. In particolare volevamo mantenere le forme antiquate e non molto funzionali della tuta da palombaro, unite ai
+        materiali della tuta da astronauta, vista anche l’ambientazione in cui si svolge la storia (un futuro indefinito).
+        Per il design delle architetture ci siamo ispirati moltissimo alle foto di Bernd e Hilla Becher. La torre di controllo è ispirata da una serie di loro foto chiamata “Torri dell’Acqua”, mentre la fabbrica abbandonata alla serie “Depositi di
+        Carbone”. Un’altra fonte di ispirazione, sia per le architetture che per l'atmosfera, è stata la fotografa Danila Tkachenko, in particolare la sua serie chiamata Restricted Areas, che documenta una alcuni siti abbandonati costruiti dall’URSS.
+      </p>
+      <img src="http://www.danilatkachenko.com/storage/media/bezat1/ra18.jpg" title="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015"
+        alt="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015" class="report_image">
+      <img src="http://www.danilatkachenko.com/storage/media/bezat1/ra26.jpg" title="Rovine del sistema laser sperimentale “ZET”. Kazakhstan, regione del Karaganda, 2015"
+        alt="Rovine del sistema laser sperimentale “ZET”. Kazakhstan, regione del Karaganda, 2015" class="report_image">
+      <p class="report_paragraph">
+        Successivamente, durante lo sviluppo del corto, ci siamo resi conto che avevamo bisogno di qualcosa per rendere più caratteristiche le tute dei personaggi. Abbiamo quindi pensato di inserire una toppa con il logo della compagnia per cui
+        lavorano e quindi abbiamo dovuto creare la compagnia ed il logo. Abbiamo pensato che potesse trattarsi di un azienda russa (il paesaggio era credibile come una futura Russia distopica abbandonata) e l’abbiamo chiamata FuturGas, ispirandoci
+        alle maggiori aziende del paese, che sono appunto dell’industria legata al gas. Il nome è scritto in cirillico, come per tutti i testi dell’interfaccia del casco dei personaggi, cosa che aggiunge un grado di incomprensibilità e mistero in
+        più.
+      </p>
+      <!-- 3. Storyboard e Animatic -->
+      <h1 id="3" class="report_title orangeColor">3. Storyboard e Animatic</h1>
+      <p class="report_paragraph">
+        Per avere un’idea migliore di cosa sarebbe dovuto accadere effettivamente a schermo, si è realizzato uno storyboard di tutte le scene. Non è un lavoro tecnicamente molto curato, ma svolge bene il suo lavoro, ossia far capire la composizione
+        delle inquadrature, i movimenti di macchina, la posizione dei personaggi e delle architetture.
+        All’inizio avevamo in mente di realizzare anche l’animatic dell’intero corto. Alla fine ci siamo resi conto che non ne valeva la pena, poichè avrebbe preso molto tempo e lo storyboard risultava sufficientemente esplicativo. Alla fine abbiamo
+        completato l’animatic solo fino alla scena 7.
+      </p>
+      <div style="padding-top: 56.25%; position:relative">
+        <iframe src="https://www.youtube.com/embed/fuXZMQAD9vU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="report_video"></iframe>
+      </div>
+      <!-- Modellazione -->
+      <h1 id="4" class="report_title orangeColor">4. Modellazione</h1>
+      <p class="report_paragraph">
+        Da subito abbiamo iniziato la modellazione degli edifici (torre di controllo, capannone, fabbrica, casetta container) e degli asset (cassetta degli attrezzi, strumento) che sapevamo sarebbero stati meno impegnativi del personaggio. Abbiamo
+        utilizzato Quixel Bridge per scaricare alcuni modelli per arricchire maggiormente le scene.
+        La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia e poi vi sono stati sovrapposti dei primitivi che facessero da base per la tuta. Le increspature del tessuto sono state ottenute
+        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha).
+        Aggiungere cuciture!
+
+
+      </p>
+      <!-- 5. Shading -->
+      <h1 id="5" class="report_title orangeColor">5. Shading</h1>
+      <p class="report_paragraph">
+        Quando abbiamo iniziato a lavorare al progetto in realtà non avevamo nemmeno idea di cosa significasse retopology e nemmeno che ce ne fosse bisogno. Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di
+        un personaggio, in modo da renderlo ben deformabile ed animabile nelle fasi successive. Dopo varie peripezie per capire come svolgerla, si è trattato di ricostruire il personaggio utilizzando delle facce rettangolari da “appoggiare” sul
+        modello già esistente. Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero molto inferiore di poligoni e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
+        tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map, da applicare al nuovo modello.
+        Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
+
+      </p>
+      <!-- 6 Retopology e Rigging -->
+      <h1 id="6" class="report_title orangeColor">6. Retopology e Rigging</h1>
+      <p class="report_paragraph">
+        Anche per quanto riguarda la creazione dei materiali ci siamo serviti di Quixel Bridge, che contiene un’ampissima libreria di materiali PBR. Tuttavia abbiamo attinto anche da altre fonti come textures.com, texturehaven.com, 3dtextures.me,
+        cgbookcase.com e cc0textures.com. .
+        Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento. A causa delle enormi dimensioni che spesso doveva avere tutti i materiali che trovavamo apparivano
+        ripetuti in modo molto evidente. Per risolvere il problema...(parte di loca dove spiega il terreno)
+      </p>
+      <!-- 7. Animazione-->
+      <h1 id="7" class="report_title orangeColor">7. Animazione</h1>
+      <p class="report_paragraph">
+        La fase di animazione è stata di gran lunga la più lunga ed impegnativa. In questo caso, il problema non era capire come fare qualcosa tecnicamente (con eccezione del Non Linear Animation Editor, che ad oggi rimane ancora un mistero), ma il
+        tempo che ci voleva per farla. Abbiamo speso più di un mese per animare tutte le azioni dei due personaggi principali e della folla. In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole nell’Action Editor, ma la
+        maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In qualche caso, soprattutto per le animazioni della folla, ci siamo serviti di Mixamo, un servizio che permette di scaricare gratuitamente delle animazioni di
+        ottima fattura.
+
+      </p>
+      <!-- 8. Regia e Fotografia-->
+      <h1 id="8" class="report_title orangeColor">8. Regia e Fotografia</h1>
+      <p class="report_paragraph">
+        La regia impiegata per il corto sottolinea l’isolamento dei personaggi, facendoli apparire spesso piccolissimi e molto distanti gli uni tra gli altri. I movimenti di macchina sono minimi per quasi tutto il corto. Nel finale questo cambia, con
+        l’introduzione di riprese che simulano la camera a mano, ottenuta agendo con il Noise modifier nel Graph Editor della camera. L’aspect ratio utilizzato è 2,4:1 (1920x800) ed è stato scelto per mettere in risalto la vastità degli ambienti e
+        per conferire un aspetto più cinematografico.
+        Le scelte di illuminazione negli ambienti esterni sono state influenzate dalla presenza della nebbia volumetrica, che amplifica e diffonde ogni fonte luminosa. Per l’unico ambiente interno, la fabbrica, si è scelta una configurazione molto
+        minimale che prevede delle luci dall’alto.
+
+      </p>
+      <!-- 9. Rendering-->
+      <h1 id="9" class="report_title orangeColor">9. Rendering</h1>
+      <p class="report_paragraph">
+        Tutto il cortometraggio è stato renderizzato utilizzando il motore di rendering Eevee. Possiamo tranquillamente dire che l’esistenza di Eevee è uno dei motivi principali per i cui siamo riusciti a realizzare questo cortometraggio. Sarebbe
+        stato impossibile svilupparlo utilizzando Cycles, a causa delle ovvie limitazioni tecniche (abbiamo lavorato su portatili per la maggiorparte del tempo, anche solo attivare la render preview con cycles spesso causava un immediato crash di
+        Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare molto più velocemente e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi
+        lati negativi. Abbiamo dovuto spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.
+        Un problema che subito abbiamo riscontrato è stato il fatto che, ad oggi (estate 2020), Eevee non supporta il motion blur legato al movimento degli oggetti, ma solo quello derivato dal movimento della telecamera. Il motion blur è
+        fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una telecamera reale. Fortunatamente esiste un add-on per risolvere questo problema, che
+        però abbiamo deciso di utilizzare solo quando era veramente necessario, poiché incrementa considerevolmente i tempi di rendering.
+      </p>
+      <!-- 10. Montaggio e Suono-->
+      <h1 id="10" class="report_title orangeColor">10. Montaggio e Suono</h1>
+      <p>
+        La fase di montaggio è stata più un assemblamento di parti che un vero processo creativo, poichè praticamente tutte le scelte di tempo e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi
+        avrebbero rischiato di essere tagliate. Per quanto riguarda il post-processing, è stata aggiunta della grana per simulare la pellicola cinematografica ed è stata applicata una leggera distorsione all’immagine per avvicinarsi all’effetto che
+        si otterrebbe utilizzando delle lenti anamorfiche.
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+      <p>
+        TITOLO è un cortometraggio realizzato con Blender, per il corso
+        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
+        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
+        Storia
+
+      </p>
+
+    </div>
+    <div class="content" id="dx">
+      <!-- <h1 id="piccolo">Autori</h1> -->
+    </div>
+  </div>
+  <!-- </div> -->
+
+</body>
+<script>
+  var fixmeTop = $('.fixme').offset().top;
+  $(window).scroll(function() {
+    var currentScroll = $(window).scrollTop();
+    if (currentScroll >= fixmeTop) {
+      $('.fixme').css({
+        position: 'fixed',
+        top: '0',
+        left: '0'
+      });
+    } else {
+      $('.fixme').css({
+        position: 'static'
+      });
+    }
+  });
+</script>
+
 </html>
