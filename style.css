@@ -156,8 +156,9 @@ a:active {
   font-size: 17px;
 }
 .immagine_larga{
-  width: 120%;
-  transform: translateX(-10%);
+  width: 130%;
+  transform: translateX(-11.7%);
+  padding-bottom: 20px;
 }
 .immagine_stretta{
   width: 50%;
