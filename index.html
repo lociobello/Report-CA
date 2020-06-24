@@ -138,8 +138,8 @@
       <p class="report_paragraph">
         Da subito abbiamo iniziato la modellazione degli edifici (torre di controllo, capannone, fabbrica, casetta container)
         e degli asset (cassetta degli attrezzi, strumento) che sapevamo sarebbero stati meno impegnativi del personaggio. Abbiamo
-        utilizzato Quixel Bridge per scaricare alcuni modelli per arricchire maggiormente le scene.
-        La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia
+        utilizzato <a href="https://quixel.com/bridge" target="_blank"><u>Quixel Bridge</u></a> per scaricare alcuni modelli per arricchire maggiormente le scene.
+        <br>La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia
         e poi vi sono stati sovrapposti dei primitivi che facessero da base per la tuta. Le increspature del tessuto sono state ottenute
         utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha).Aggiungere cuciture!
       </p>
@@ -147,8 +147,10 @@
       <h1 id="5" class="report_title orangeColor">5. Shading</h1>
       <p class="report_paragraph">
         Anche per quanto riguarda la creazione dei materiali ci siamo serviti di Quixel Bridge, che contiene un’ampissima libreria di materiali PBR.
-        Tuttavia abbiamo attinto anche da altre fonti come textures.com, texturehaven.com, 3dtextures.me, cgbookcase.com e cc0textures.com.
-        Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento.
+        Tuttavia abbiamo attinto anche da altre fonti come <a href="https://www.textures.com/" target="_blank"><u>textures.com</u></a>,
+        <a href="https://texturehaven.com/" target="_blank"><u>texturehaven.com</u></a>, <a href="https://3dtextures.me/" target="_blank"><u>3dtextures.me</u></a>,
+        <a href="https://cgbookcase.com/" target="_blank"><u>cgbookcase.com</u></a> e <a href="https://cc0textures.com/" target="_blank"><u>cc0textures.com</u></a>.
+        <br>Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento.
         A causa delle enormi dimensioni che spesso doveva avere tutti i materiali che trovavamo apparivano
         ripetuti in modo molto evidente. Per risolvere il problema...(parte di loca dove spiega il terreno)
       </p>
@@ -157,12 +159,12 @@
       <p class="report_paragraph">
         Quando abbiamo iniziato a lavorare al progetto in realtà non avevamo nemmeno idea di cosa significasse retopology e nemmeno che ce ne fosse bisogno.
         Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di
-        un personaggio, in modo da renderlo ben deformabile ed animabile nelle fasi successive. Dopo varie peripezie per capire come svolgerla,
+        un personaggio, in modo da renderlo ben deformabile, caratteristica fondamentale per ottenere delle buone animazioni. Dopo varie peripezie per capire come svolgerla,
         si è trattato di ricostruire il personaggio utilizzando delle facce rettangolari da “appoggiare” sul
         modello già esistente. Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero molto inferiore di poligoni
         e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
         tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map,
-        da applicare al nuovo modello. Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
+        da applicare al nuovo modello. <br>Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
       </p>
       <!-- 7. Animazione-->
       <h1 id="7" class="report_title orangeColor">7. Animazione</h1>
@@ -172,7 +174,7 @@
         tempo che ci voleva per farla. Abbiamo speso più di un mese per animare tutte le azioni dei due personaggi principali e della folla.
         In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole nell’Action Editor, ma la
         maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In qualche caso, soprattutto per le animazioni della folla,
-        ci siamo serviti di Mixamo, un servizio che permette di applicare delle animazioni di ottima fattura a dei modelli di personaggi.
+        abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura a dei modelli di personaggi.
 
       </p>
       <!-- 8. Regia e Fotografia-->
@@ -181,7 +183,7 @@
         La regia impiegata per il corto sottolinea l’isolamento dei personaggi, facendoli apparire spesso piccolissimi e molto distanti gli uni tra gli altri.
         I movimenti di macchina sono minimi per quasi tutto il corto. Nel finale questo cambia, con l’introduzione di riprese che simulano la camera a mano,
         ottenuta agendo con il Noise modifier nel Graph Editor della camera. L’aspect ratio utilizzato è 2,4:1 (1920 x 800 pixel) ed è stato scelto per mettere
-        in risalto la vastità degli ambienti e per conferire un aspetto più cinematografico. Le scelte di illuminazione negli ambienti esterni sono state
+        in risalto la vastità degli ambienti e per conferire un aspetto più cinematografico. <br>Le scelte di illuminazione negli ambienti esterni sono state
         influenzate dalla presenza della nebbia volumetrica, che amplifica e diffonde ogni fonte luminosa. Per l’unico ambiente interno, la fabbrica,
         si è scelta una configurazione molto minimale che prevede delle luci dall’alto.
 
@@ -195,7 +197,7 @@
         del tempo, anche solo attivare la render preview con cycles spesso causava un immediato crash di
         Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare molto più velocemente
         e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi
-        lati negativi. Abbiamo dovuto spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.
+        lati negativi. Abbiamo dovuto spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.<br>
         Un problema che subito abbiamo riscontrato è stato il fatto che, ad oggi (estate 2020), Eevee non supporta il motion blur legato al movimento
         degli oggetti, ma solo quello derivato dal movimento della telecamera. Il motion blur è
         fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse
