@@ -1,5 +1,6 @@
 @font-face{font-family: sohne; font-weight: normal; src: url('fonts/Sohne-Buch.ttf');}
 @font-face{font-family: sohne; font-weight: bold; src: url('fonts/Sohne-Kraftig.ttf');}
+/* @font-face{font-family: sohne; font-weight: italic; src: url('fonts/Sohne-BuchKursiv.ttf');} */
 
 *{
   margin: 0px;
@@ -20,6 +21,7 @@ h1{
 }
 p{
   font-size: 20px;
+  font-weight: normal;
 }
 li{
   font-size: 17px;
@@ -128,6 +130,7 @@ a:active {
 }
 .report_paragraph {
   padding-bottom: 5vh;
+  font-weight: normal;
 }
 .report_image {
   /* padding-top: 5vh; */
@@ -151,6 +154,6 @@ a:active {
 }
 .immagine{
   width: 120%;
-  
+
 
 }
