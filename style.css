@@ -157,6 +157,7 @@ a:active {
 }
 .immagine_larga{
   width: 120%;
+  transform: translateX(-10%);
 }
 .immagine_stretta{
   width: 50%;
