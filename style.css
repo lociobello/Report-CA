@@ -155,8 +155,14 @@ a:active {
 .autori{
   font-size: 17px;
 }
-.immagine{
+.immagine_larga{
   width: 120%;
+}
+.immagine_stretta{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 #titolo{
   margin-top: -10px;
