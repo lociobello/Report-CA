@@ -175,4 +175,17 @@ a:active {
 #sottotitolo{
   color: #FF4E00;
   font-weight: normal;
+  transform: translateY(-4px);
+  font-size: 17px;
+}
+#menu-spostato{
+  transform: translateX(10px);
+}
+.freccia {
+  /* padding-bottom: 2.5vh; */
+  width: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(20px);
 }

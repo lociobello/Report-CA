@@ -22,6 +22,7 @@
         allowfullscreen></iframe>
     </div>
     <script src="https://player.vimeo.com/api/player.js"></script>
+    <img src="images/freccia.svg" class="freccia">
   </div>
   <div class="fixme">
     <div id="index_sx">
@@ -36,7 +37,7 @@
         <li><a href="#7" class="menu">Animazione</a></li>
         <li><a href="#8" class="menu">Regia e Fotografia</a></li>
         <li><a href="#9" class="menu">Rendering</a></li>
-        <li><a href="#10" class="menu">Montaggio e Suono</a></li>
+        <li id="menu-spostato"><a href="#10" class="menu">Montaggio e Suono</a></li>
       </ol>
     </div>
     <div id="authors_dx" style="padding-left: 6vw; padding-right: 3vw">
@@ -67,12 +68,11 @@
       <h1 id="1" class="report_title orangeColor">1. Storia</h1>
       <p class="report_paragraph">
         Tutto è iniziato con lo sviluppo della sceneggiatura. Durante la scrittura si sono prese una serie di scelte atte a semplificare il più possibile
-        il lavoro nelle fasi successive. Una fondamentale è stata il fatto che tutti i personaggi
-        dovessero indossare un casco. Questo accorgimento, oltre ad essere perfettamente coerente con la narrazione, ci ha risparmiato la necessità
-        di dover animare il volto dei protagonisti. Un’altra scelta che ci ha semplificato il lavoro è stata
-        quella dell’ambientazione molto desolata, che ha ridotto il numero di modelli da produrre per popolare i vari ambienti. Questo tuttavia non
-        è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è
-        rapidamente trasformato il qualcosa di molto più grande di quello che avevamo immaginato inizialmente.
+        il lavoro nelle fasi successive. Una fondamentale è stata il fatto che tutti i personaggi dovessero indossare un casco. Questo accorgimento, oltre ad essere
+        perfettamente coerente con la narrazione, ci ha risparmiato la necessità di dover animare il volto dei protagonisti. Un’altra scelta che ci ha semplificato
+        il lavoro è stata quella dell’ambientazione molto desolata, che ha ridotto il numero di modelli da produrre per popolare i vari ambienti. Questo tuttavia non
+        è per dire che si è scritto con il solo intento di minimizzare le difficoltà, anzi. Il progetto si è rapidamente trasformato il qualcosa di molto più grande
+        di quello che avevamo immaginato inizialmente.
       </p>
       <div style="padding-bottom:5%; position:relative">
         <iframe src="https://drive.google.com/file/d/1mzGpyUehhzERP6ToXbXlFOXTzXwLT_KA/preview" width="100%" height="900" frameborder="0"></iframe>
@@ -82,10 +82,9 @@
       <h1 id="2" class="report_title orangeColor">2. Concept</h1>
       <p class="report_paragraph">
         Dopo aver finito di scrivere la sceneggiatura abbiamo subito iniziato una fase di brainstorming e raccolta di reference per iniziare a capire
-        quale sarebbe dovuto essere il design dei personaggi. Alla fine abbiamo optato per un mix tra un
-        palombaro ed un astronauta, le cui tute trasmettevano la stessa sensazione di isolamento dal mondo esterno che stavamo cercando.
-        In particolare volevamo mantenere le forme antiquate e non molto funzionali della tuta da palombaro, unite ai
-        materiali della tuta da astronauta, vista anche l’ambientazione in cui si svolge la storia (un futuro indefinito).
+        quale sarebbe dovuto essere il design dei personaggi. Alla fine abbiamo optato per un mix tra un palombaro ed un astronauta, le cui tute trasmettevano
+        la stessa sensazione di isolamento dal mondo esterno che stavamo cercando. In particolare volevamo mantenere le forme antiquate e non molto funzionali
+        della tuta da palombaro, unite ai materiali della tuta da astronauta, vista anche l’ambientazione in cui si svolge la storia (un futuro indefinito).
       </p>
       <img src="images/torre.jpg" class="immagine_stretta">
       <img src="images/capannone.jpg" class="immagine_stretta">
@@ -103,7 +102,8 @@
       <br>
       <p class="report_paragraph">
         Un’altra fonte di ispirazione, sia per le architetture che per l'atmosfera, è stata la fotografa Danila Tkachenko, in particolare
-        la sua serie chiamata <a href="http://www.danilatkachenko.com/projects/restricted-areas/" target="_blank"><u><i>Restricted Areas</i></u></a>, che documenta una alcuni siti abbandonati costruiti dall’URSS.
+        la sua serie chiamata <a href="http://www.danilatkachenko.com/projects/restricted-areas/" target="_blank"><u><i>Restricted Areas</i></u></a>,
+        che documenta una alcuni siti abbandonati costruiti dall’URSS.
       </p>
       <img src="http://www.danilatkachenko.com/storage/media/bezat1/ra18.jpg" title="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015"
         alt="Quartier generale del partito comunista. Bulgaria, regione dello Yugoiztochen, 2015" class="report_image">
@@ -164,11 +164,10 @@
       <h1 id="6" class="report_title orangeColor">6. Retopology e Rigging</h1>
       <p class="report_paragraph">
         Quando abbiamo iniziato a lavorare al progetto in realtà non avevamo nemmeno idea di cosa significasse retopology e nemmeno che ce ne fosse bisogno.
-        Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di
-        un personaggio, in modo da renderlo ben deformabile, caratteristica fondamentale per ottenere delle buone animazioni. Dopo varie peripezie per capire come svolgerla,
-        si è trattato di ricostruire il personaggio utilizzando delle facce rettangolari da “appoggiare” sul
-        modello già esistente. Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero molto inferiore di poligoni
-        e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
+        Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di un personaggio, in modo da renderlo ben deformabile,
+        caratteristica fondamentale per ottenere delle buone animazioni. Dopo varie peripezie per capire come svolgerla, si è trattato di ricostruire il personaggio
+        utilizzando delle facce rettangolari da “appoggiare” sul modello già esistente. Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero
+        molto inferiore di poligoni e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
         tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map,
         da applicare al nuovo modello. <br>Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
       </p>
@@ -179,12 +178,11 @@
       <h1 id="7" class="report_title orangeColor">7. Animazione</h1>
       <p class="report_paragraph">
         La fase di animazione è stata di gran lunga la più lunga ed impegnativa. In questo caso, il problema non era capire come fare qualcosa tecnicamente
-        (con eccezione del Non Linear Animation Editor, che ad oggi rimane ancora un mistero), ma il
-        tempo che ci voleva per farla. Abbiamo speso più di un mese per animare tutte le azioni dei due personaggi principali e della folla.
-        In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole nell’Action Editor, ma la
-        maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In qualche caso, soprattutto per le animazioni della folla,
-        abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura a dei modelli di personaggi.
-
+        (con eccezione del Non Linear Animation Editor, che ad oggi rimane ancora un mistero), ma il tempo che ci voleva per farla. Abbiamo speso più di un
+        mese per animare tutte le azioni dei due personaggi principali e della folla. In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole
+        nell’Action Editor, ma la maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In qualche caso, soprattutto per le animazioni della folla,
+        abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura
+        a dei modelli di personaggi.
       </p>
       <!-- 8. Regia e Fotografia-->
       <h1 id="8" class="report_title orangeColor">8. Regia e Fotografia</h1>
@@ -200,17 +198,15 @@
       <h1 id="9" class="report_title orangeColor">9. Rendering</h1>
       <p class="report_paragraph">
         Tutto il cortometraggio è stato renderizzato utilizzando il motore di rendering Eevee. Possiamo tranquillamente dire che l’esistenza di Eevee
-        è uno dei motivi principali per i cui siamo riusciti a realizzare questo cortometraggio. Sarebbe
-        stato impossibile svilupparlo utilizzando Cycles, a causa delle ovvie limitazioni tecniche (abbiamo lavorato su portatili per la maggiorparte
-        del tempo, anche solo attivare la render preview con cycles spesso causava un immediato crash di
-        Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare molto più velocemente
-        e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi
-        lati negativi. Abbiamo dovuto spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.<br>
+        è uno dei motivi principali per i cui siamo riusciti a realizzare questo cortometraggio. Sarebbe stato impossibile svilupparlo utilizzando Cycles,
+        a causa delle ovvie limitazioni tecniche (abbiamo lavorato su portatili per la maggiorparte del tempo, anche solo attivare la render preview con cycles
+        spesso causava un immediato crash di Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare
+        molto più velocemente e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi lati negativi. Abbiamo dovuto
+        spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.<br>
         Un problema che subito abbiamo riscontrato è stato il fatto che, ad oggi (estate 2020), Eevee non supporta il motion blur legato al movimento
-        degli oggetti, ma solo quello derivato dal movimento della telecamera. Il motion blur è
-        fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse
-        girata con una telecamera reale. Fortunatamente esiste un add-on per risolvere questo problema, che
-        però abbiamo deciso di utilizzare solo quando era veramente necessario, poiché incrementa considerevolmente i tempi di rendering.
+        degli oggetti, ma solo quello derivato dal movimento della telecamera. Il motion blur è fondamentale, soprattutto nelle scene con un'azione concitata,
+        per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una telecamera reale. Fortunatamente esiste un add-on per risolvere
+        questo problema, che però abbiamo deciso di utilizzare solo quando era veramente necessario, poiché incrementa considerevolmente i tempi di rendering.
       </p>
       <img src="images/1540.png" class="immagine_larga">
 
@@ -218,74 +214,11 @@
       <h1 id="10" class="report_title orangeColor">10. Montaggio e Suono</h1>
       <p>
         La fase di montaggio è stata più un assemblamento di parti che un vero processo creativo, poichè praticamente tutte le scelte di tempo
-        e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi
-        avrebbero rischiato di essere tagliate. Per quanto riguarda il post-processing, è stata aggiunta della grana per simulare la pellicola
-        cinematografica ed è stata applicata una leggera distorsione all’immagine per avvicinarsi all’effetto che
-        si otterrebbe utilizzando delle lenti anamorfiche.
+        e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi avrebbero rischiato di essere tagliate. Per quanto
+        riguarda il post-processing, è stata aggiunta della grana per simulare la pellicola cinematografica ed è stata applicata una leggera distorsione all’immagine
+        per avvicinarsi all’effetto che si otterrebbe utilizzando delle lenti anamorfiche.
       </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
 
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
-      <p>
-        TITOLO è un cortometraggio realizzato con Blender, per il corso
-        di Computer Animation tenuto dal professor Edie Miglio e da tutor Daniele
-        Cerroni al Politecnico di Milano, Laurea Triennale in Design della Comunicazione.
-        Storia
-
-      </p>
 
     </div>
     <div class="content" id="dx">
