@@ -84,7 +84,7 @@
         la stessa sensazione di isolamento dal mondo esterno che stavamo cercando. In particolare volevamo mantenere le forme antiquate e non molto funzionali
         della tuta da palombaro, unite ai materiali della tuta da astronauta, vista anche l’ambientazione in cui si svolge la storia (un futuro indefinito). <br>
         Fin dall'inizio il colore delle tute dei personaggi è stato l'arancione, per motivazioni principalmente estetiche, poichè garantiva un buon distacco dallo sfondo
-        spesso privo di colori accesi. In aggiunta, l'arancione rimanda anche alla tuta che spesso i carcerati indossano (pricipalmente negli USA).
+        spesso privo di colori accesi. In aggiunta, l'arancione rimanda anche alla tuta che spesso i carcerati indossano, pricipalmente negli USA.
       </p>
       <img src="images/torre.jpg" class="immagine_stretta">
       <img src="images/capannone.jpg" class="immagine_stretta">
@@ -145,7 +145,7 @@
         utilizzato <a href="https://quixel.com/bridge" target="_blank"><u>Quixel Bridge</u></a> per scaricare alcuni modelli per arricchire maggiormente le scene.
         <br>La modellazione del personaggio è iniziata dal casco per poi passare al corpo. E’ stata prima definita l’anatomia
         e poi vi sono stati sovrapposti dei primitivi che facessero da base per la tuta. Le increspature del tessuto sono state ottenute
-        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha).Aggiungere cuciture!
+        utilizzando il Cloth Brush, disponibile in Blender 2.83 (al tempo in alpha).
       </p>
       <img src="images/personaggio.jpg" class="report_image">
       <img src="images/casco.jpg" class="report_image">
@@ -160,7 +160,7 @@
         <a href="https://cgbookcase.com/" target="_blank"><u>cgbookcase.com</u></a> e <a href="https://cc0textures.com/" target="_blank"><u>cc0textures.com</u></a>.
         <br>Una particolare necessità che avevamo era quella di realizzare un materiale da utilizzare per il terreno, interamente coperto di cemento.
         A causa delle enormi dimensioni che spesso doveva avere tutti i materiali che trovavamo apparivano
-        ripetuti in modo molto evidente. Per risolvere il problema...(parte di loca dove spiega il terreno)
+        ripetuti in modo molto evidente. Per risolvere il problema...(parte di loca dove spiega il terreno), Aggiungere cuciture!
       </p>
 
       <!-- 6 Retopology e Rigging -->
@@ -169,10 +169,11 @@
         Quando abbiamo iniziato a lavorare al progetto in realtà non avevamo nemmeno idea di cosa significasse retopology e nemmeno che ce ne fosse bisogno.
         Con retopology si intende l’atto di semplificare ed armonizzare la geometria del modello di un personaggio, in modo da renderlo ben deformabile,
         caratteristica fondamentale per ottenere delle buone animazioni. Dopo varie peripezie per capire come svolgerla, si è trattato di ricostruire il personaggio
-        utilizzando delle facce rettangolari da “appoggiare” sul modello già esistente. Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero
+        utilizzando delle facce rettangolari da “appoggiare” sul modello già esistente (con l'aiuto dello shrinkwrap modifier). Il nuovo personaggio, pur avendo le stesse forme di quello vecchio, ha un numero
         molto inferiore di poligoni e le facce quadrangolari permettono un'ottima deformazione. L’ultimo passo da compiere è quello di trasferire
         tutti i dettagli andati persi nella semplificazione del modello (soprattutto delle pieghe della tuta), tramite la creazione di una normal map,
-        da applicare al nuovo modello. <br>Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
+        da applicare al nuovo modello. Questa serie di operazioni è stata ripetuta per entrambi i personaggi.<br>
+        Per la creazione del rig del personaggio abbiamo usato l’addon Rigify incluso in Blender. (parte di loca da scrivere)
       </p>
       <img src="images/retopo.jpg" class="report_image">
       <img src="images/rig.jpg" class="report_image">
@@ -183,7 +184,7 @@
         La fase di animazione è stata di gran lunga la più lunga ed impegnativa. In questo caso, il problema non era capire come fare qualcosa tecnicamente
         (con eccezione del Non Linear Animation Editor, che ad oggi rimane ancora un mistero), ma il tempo che ci voleva per farla. Abbiamo speso più di un
         mese per animare tutte le azioni dei due personaggi principali e della folla. In rare occasioni siamo stati in grado di riutilizzare delle azioni salvandole
-        nell’Action Editor, ma la maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In qualche caso, soprattutto per le animazioni della folla,
+        nell’Action Editor, ma la maggiorparte necessitavano di essere uniche per soddisfare i bisogni della scena. In alcuni casi, soprattutto per le animazioni della folla,
         abbiamo utilizzato <a href="https://www.mixamo.com/#/" target="_blank"><u>Mixamo</u></a>, un servizio che permette di applicare delle animazioni di ottima fattura
         a dei modelli di personaggi.<br>
         Per riuscire a collaborare efficentemente tra di noi, abbiamo creato una shot list su un foglio di calcolo Google, in modo da tenere d'occhio chi si stava occupando
@@ -199,6 +200,10 @@
         ottenuta agendo con il Noise modifier nel Graph Editor della camera. L’aspect ratio utilizzato è 2,4:1 (1920 x 800 pixel) ed è stato scelto per mettere
         in risalto la vastità degli ambienti e per conferire un aspetto più cinematografico. <br>
         Le scelte di illuminazione negli ambienti esterni sono state influenzate dalla presenza della nebbia volumetrica, che amplifica e diffonde ogni fonte luminosa.
+        La nebbia è contenuta all'interno di un grandissimo cubo ed è realizzata tramite il mix di due materiali Principled Volume, uno per una nebbia più rarefatta ad
+        alta quota ed uno per una più densa, vicino al terreno.<br>
+        Per la realizzazione del sole nelle scene al tramonto, non si è utilizzata la Sun Light, che non garantiva la presenza del disco solare, ma una Spot Light
+        ad altissima intensità.
       </p>
 
       <!-- 9. Rendering-->
@@ -210,10 +215,11 @@
         spesso causava un immediato crash di Blender). La possibilità di avere una preview (quasi) istantanea della scena renderizzata ci ha permesso di lavorare
         molto più velocemente e prendere migliori decisioni creative. Ovviamente usare un motore di rendering biased ha anche i suoi lati negativi. Abbiamo dovuto
         spendere un po’ più di tempo nel trovare la configurazione di luci che potesse rendere credibile e realistica ogni scena.<br>
-        Un problema che subito abbiamo riscontrato è stato il fatto che, ad oggi (estate 2020), Eevee non supporta il motion blur legato al movimento
-        degli oggetti, ma solo quello derivato dal movimento della telecamera. Il motion blur è fondamentale, soprattutto nelle scene con un'azione concitata,
-        per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una telecamera reale. Fortunatamente esiste un add-on per risolvere
-        questo problema, che però abbiamo deciso di utilizzare solo quando era veramente necessario, poiché incrementa considerevolmente i tempi di rendering.
+        Un problema che subito abbiamo riscontrato è stato il fatto che Eevee non supporta il motion blur legato al movimento
+        degli oggetti, ma solo quello derivato dal movimento della telecamera (l'hanno aggiunto con l'alpha di Blender 2.9 a inizio luglio, mannaggia a loro). Il motion blur
+        è fondamentale, soprattutto nelle scene con un'azione concitata, per aggiungere quel pizzico di realismo che fa percepire la scena come se fosse girata con una
+        telecamera reale. Fortunatamente esiste un add-on per risolvere questo problema, che però abbiamo deciso di utilizzare solo quando era veramente necessario,
+        poiché incrementa i tempi di rendering.
       </p>
       <img src="images/1540.png" class="immagine_larga">
 
@@ -221,9 +227,11 @@
       <h1 id="10" class="report_title orangeColor">10. Montaggio e Suono</h1>
       <p>
         La fase di montaggio è stata più un assemblamento di parti che un vero processo creativo, poichè praticamente tutte le scelte di tempo
-        e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi avrebbero rischiato di essere tagliate. Per quanto
-        riguarda il post-processing, è stata aggiunta della grana per simulare la pellicola cinematografica ed è stata applicata una leggera distorsione all’immagine
-        per avvicinarsi all’effetto che si otterrebbe utilizzando delle lenti anamorfiche.
+        e ritmo erano state precedentemente calcolate, per evitare di sprecare tempo nel realizzare scene che poi avrebbero rischiato di essere tagliate. Tuttavia non
+        sono mancate alcune modifiche apportate in fase di montaggio, atte soprattutto a dilatare alcuni momenti o azioni. Per quanto
+        riguarda il post-processing, è stata effettuata una color correction di alcuni shot per garantire una maggiore consistenza dei colori, è stata aggiunta della grana
+        per simulare la pellicola cinematografica ed è stata applicata sia una leggera distorsione che una vignette, per avvicinarsi all’effetto che si otterrebbe
+        utilizzando delle lenti anamorfiche.
       </p>
 
 
@@ -235,6 +243,7 @@
   <!-- </div> -->
 
 </body>
+
 <script>
   var fixmeTop = $('.fixme').offset().top;
   $(window).scroll(function() {
